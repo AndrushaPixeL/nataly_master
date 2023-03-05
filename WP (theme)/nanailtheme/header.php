@@ -1,37 +1,41 @@
-<!DOCTYPE html>
-<html lang="ru-RU">
-<html prefix="og: //ogp.me/ns#">
-<head>
 <html <?php language_attributes(); ?>>
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=<?php bloginfo( "charset" ); ?>">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<title><?php wp_title('«', true, 'right'); ?> <?php bloginfo('NA|NAIL'); ?></title>
+<title><?php wp_title('-', true, 'right'); ?> <?php bloginfo('NA|NAIL'); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=0.85, maximum-scale=1, user-scalable=0">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( "pingback_url" ); ?>">
-<link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>" type="text/css"/>
-<meta property="og:type" content="website">
-  <meta property="og:title" content="NA|NAIL. Мастер маникюра, который готов сотворить любое чудо на твоих ноготках!">
-  <meta property="og:description"
-    content="Меня зовут Наталья и я мастер маникюра. Покажи мне картинку и случится волшебство. Hарисую аниме, игры, мультяшки, цветы и тд...">
-  <meta property="og:url" content="https://na-nail.ru/">
-  <meta property="og:image" content="https://na-nail.ru/img/NA_NAIL_snippet.png">
-  <meta property="og:site_name" content="na-nail.ru">
-  <meta property="og:image" content="https://na-nail.ru/img/NA_NAIL_snippet.png" />
-  <meta property="vk:image" content="https://na-nail.ru/img/NA_NAIL_snippet.png" />
-  <meta name="msapplication-TileColor" content="# ffffff">
-  <meta name="theme-color" content="#ffffff">
 
 <?php wp_head(); ?>
 </head>
-<body  <?php body_class(); ?>>
+<body <?php body_class(); ?>>
 <div class="wrapper">
 <header class="header">
     <div class="header_wrap">
-    <a href='/'><img class="header_logo" src="<?php echo get_template_directory_uri() ?>/img/logo/logo.png" alt="NA|NAIL logo"></a>
-        <div class="header_link">
-        <div class="header_link_soc">
+      <img class="header_logo" src="<?php echo get_template_directory_uri() ?>/img/logo/logo.png">
+      <div class="header_links">
+        <a href="https://na-nail.ru" class="header_link_item">Главная</a>
+        <a href="https://na-nail.ru/services/" class="header_link_item">Услуги</a>
+        <a href="https://na-nail.ru/about_me/" class="header_link_item">Обо мне</a>
+        <a href="https://na-nail.ru/contact/" class="header_link_item">Контакты</a>
+      </div>
+      <button class="menu_button">
+        <svg class="menu_button_icon" viewBox="0 -53 384 384">
+          <path
+            d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+          <path
+            d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+          <path
+            d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+        </svg>
+        <div class="menu_items">
+        <a href="https://na-nail.ru" class="header_link_item">Главная</a>
+        <a href="https://na-nail.ru/services/" class="header_link_item">Услуги</a>
+        <a href="https://na-nail.ru/about_me/" class="header_link_item">Обо мне</a>
+        <a href="https://na-nail.ru/contact/" class="header_link_item">Контакты</a>
+        </div>
+      </button>
+
+      <div class="header_soc">
+        <div class="header_soc_icons">
           <a target="_blank" href="https://vk.com/nanail_vrn">
             <svg viewBox="0 0 64 64" class="header_link_svg">
               <g>
@@ -75,7 +79,6 @@
           </a>
         </div>
       </div>
-    </div>
   </header>
 
 

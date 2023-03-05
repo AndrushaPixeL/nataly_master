@@ -9,4 +9,9 @@ function footer() {
 window.addEventListener('load', footer);
 window.addEventListener('resize', footer);
 
-console.log("hello");
+const menuButton = document.querySelector('.menu_button');
+const menuItems = document.querySelector('.menu_items');
+
+menuButton.addEventListener('click', () => {
+    menuItems.classList.toggle('show');
+});
