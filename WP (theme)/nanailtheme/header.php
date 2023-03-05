@@ -10,7 +10,7 @@
 <div class="wrapper">
 <header class="header">
     <div class="header_wrap">
-      <img class="header_logo" src="<?php echo get_template_directory_uri() ?>/img/logo/logo.png">
+      <img class="header_logo" src="<?php echo get_template_directory_uri() ?>/assets/img/logo/logo.png">
       <div class="header_links">
         <a href="https://na-nail.ru" class="header_link_item">Главная</a>
         <a href="https://na-nail.ru/services/" class="header_link_item">Услуги</a>

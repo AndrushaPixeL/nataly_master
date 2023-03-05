@@ -93,7 +93,7 @@ html {
     opacity: 0.7;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 770px) {
     .header_logo {
         height: 55px;
     }

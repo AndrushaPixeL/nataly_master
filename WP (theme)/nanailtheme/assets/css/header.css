@@ -58,6 +58,7 @@
   }
 
   .menu_button {
+    font-family: 'Comfortaa';
     display: block !important;
     background-color: transparent;
     border: none;
@@ -105,6 +106,8 @@
   }
 
   .header_link_item {
+    display: flex;
+    flex-direction: column;
     margin: 10px 0;
     font-size: 24px;
     color: #4489c8;
