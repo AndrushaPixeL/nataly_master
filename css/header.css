@@ -1,0 +1,135 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #ffffff;
+
+}
+
+.header_wrap {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+
+.header_logo {
+  height: 40px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.menu_button {
+  display: none;
+  cursor: pointer;
+}
+
+.menu_items {
+  position: absolute;
+  right: 75px;
+  top: 45px;
+  display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 3px;
+    text-align: start;
+    font-size: xx-large;
+}
+
+.menu_item {
+  display: block;
+  padding: 5px;
+}
+.show {
+  display: block;
+}
+@media (max-width: 767px) {
+  .header_soc {
+    display: none !important;
+  }
+  .menu_button {
+    display: block !important;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .menu_button_icon {
+    height: 30px;
+  }
+}
+
+.header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header_logo {
+  max-height: 40px;
+  max-width: 100%;
+}
+
+.header_links {
+  display: flex;
+  align-items: center;
+}
+
+.header_link_item {
+  margin-left: 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .header_logo {
+    max-height: 30px;
+    margin-right: auto;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+  .header_link_item {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #4489c8;
+    text-decoration: none;
+  }
+
+  .menu_button {
+    display: none;
+  }
+}
+
+.header_soc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+
+.header_soc_icons {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  margin: 5px;
+
+}
+
+.header_link_svg {
+  height: 35px;
+}

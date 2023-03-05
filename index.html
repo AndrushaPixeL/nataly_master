@@ -13,6 +13,7 @@
   <link rel="manifest" href="/img/favicon/site.webmanifest">
   <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#f5a995">
   <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/header.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
@@ -35,9 +36,33 @@
   <header class="header">
     <div class="header_wrap">
       <img class="header_logo" src="img/logo/logo.png">
+      <div class="header_links">
+        <a href="#" class="header_link_item">Главная</a>
+        <a href="#" class="header_link_item">Услуги</a>
+        <a href="#" class="header_link_item">Обо мне</a>
+        <a href="#" class="header_link_item">Контакты</a>
+      </div>
+      <button class="menu_button">
+        <svg class="menu_button_icon" viewBox="0 -53 384 384" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+          <path
+            d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+          <path
+            d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+        </svg>
+        <div class="menu_items">
+          <a href="#" class="menu_item">Главная</a>
+          <a href="#" class="menu_item">Услуги</a>
+          <a href="#" class="menu_item">Обо мне</a>
+          <a href="#" class="menu_item">Контакты</a>
+        </div>
+      </button>
 
-      <div class="header_link">
-        <div class="header_link_soc ">
+     
+
+      <div class="header_soc">
+        <div class="header_soc_icons">
           <a target="_blank" href="https://vk.com/nanail_vrn">
             <svg viewBox="0 0 64 64" class="header_link_svg">
               <g>
@@ -147,6 +172,14 @@
     <div class="footer_copy"> <a href="https://na-nail.ru/">NA|NAIL</a> © 2023</div>
   </footer>
   <script src="/JS.js"></script>
+  <script>
+    const menuButton = document.querySelector('.menu_button');
+    const menuItems = document.querySelector('.menu_items');
+
+    menuButton.addEventListener('click', () => {
+      menuItems.classList.toggle('show');
+    });
+  </script>
 </body>
 
 </html>
