@@ -12,7 +12,7 @@
     <div class="header_wrap">
       <a href="https://na-nail.ru"><img class="header_logo" src="<?php echo get_template_directory_uri() ?>/assets/img/logo/logo.png"></a>
       <div class="header_links">
-        <a href="https://na-nail.ru" class="header_link_item">Главная</a>
+        <a href="https://na-nail.ru/home/" class="header_link_item">Главная</a>
         <a href="https://na-nail.ru/services/" class="header_link_item">Услуги</a>
         <a href="https://na-nail.ru/about/" class="header_link_item">Обо мне</a>
         <a href="https://na-nail.ru/contact/" class="header_link_item">Контакты</a>
@@ -27,7 +27,7 @@
             d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
         </svg>
         <div class="menu_items">
-        <a href="https://na-nail.ru" class="header_link_item">Главная</a>
+        <a href="https://na-nail.ru/home/" class="header_link_item">Главная</a>
         <a href="https://na-nail.ru/services/" class="header_link_item">Услуги</a>
         <a href="https://na-nail.ru/about/" class="header_link_item">Обо мне</a>
         <a href="https://na-nail.ru/contact/" class="header_link_item">Контакты</a>
