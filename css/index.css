@@ -71,6 +71,8 @@ html {
 
 .footer_contact a:hover {
     text-decoration: underline;
+    color: #ebaf9f;
+    transition: all .1s ease-out;
 }
 
 .footer_link_svg {
@@ -91,6 +93,7 @@ html {
     text-align: center;
     font-weight: 900;
     opacity: 0.7;
+    color: #000000;
 }
 
 @media (max-width: 770px) {

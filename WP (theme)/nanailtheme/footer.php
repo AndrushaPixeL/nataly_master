@@ -45,7 +45,7 @@
           </svg>Instagram</a>
       </div>
     </div>
-    <div class="footer_logo_wrap"><img class="footer_logo" src="<?php echo get_template_directory_uri() ?>/assets/img/logo/logo.png"></div>
+    <div class="footer_logo_wrap"><a href="https://na-nail.ru/"><img class="footer_logo" src="<?php echo get_template_directory_uri() ?>/assets/img/logo/logo.png"></a></div>
   </div>
   <div class="footer_copy"> <a href="https://na-nail.ru/">NA|NAIL</a> © 2023</div>
 </footer>

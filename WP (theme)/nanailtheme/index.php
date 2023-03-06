@@ -1,3 +1,9 @@
+<?php
+/**
+ * Template Name: Главная
+ */
+?>
+
 <?php get_header(); ?>
 
 <section class="content_wrap">

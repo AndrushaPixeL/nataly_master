@@ -10,11 +10,11 @@
 <div class="wrapper">
 <header class="header">
     <div class="header_wrap">
-      <img class="header_logo" src="<?php echo get_template_directory_uri() ?>/assets/img/logo/logo.png">
+      <a href="https://na-nail.ru"><img class="header_logo" src="<?php echo get_template_directory_uri() ?>/assets/img/logo/logo.png"></a>
       <div class="header_links">
         <a href="https://na-nail.ru" class="header_link_item">Главная</a>
         <a href="https://na-nail.ru/services/" class="header_link_item">Услуги</a>
-        <a href="https://na-nail.ru/about_me/" class="header_link_item">Обо мне</a>
+        <a href="https://na-nail.ru/about/" class="header_link_item">Обо мне</a>
         <a href="https://na-nail.ru/contact/" class="header_link_item">Контакты</a>
       </div>
       <button class="menu_button">
@@ -29,7 +29,7 @@
         <div class="menu_items">
         <a href="https://na-nail.ru" class="header_link_item">Главная</a>
         <a href="https://na-nail.ru/services/" class="header_link_item">Услуги</a>
-        <a href="https://na-nail.ru/about_me/" class="header_link_item">Обо мне</a>
+        <a href="https://na-nail.ru/about/" class="header_link_item">Обо мне</a>
         <a href="https://na-nail.ru/contact/" class="header_link_item">Контакты</a>
         </div>
       </button>
@@ -80,6 +80,3 @@
         </div>
       </div>
   </header>
-
-
-   
