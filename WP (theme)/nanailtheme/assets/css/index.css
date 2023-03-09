@@ -4,17 +4,21 @@ html {
 }
 
 body {
-    margin: 0;
-}
-
-.wrapper {
     font-family: 'Comfortaa';
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    ;
+    width: 90%;
     background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    background-attachment: fixed;
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 0 10px;
 }
 
 .content_wrap {
@@ -39,7 +43,7 @@ body {
 .footer {
     width: 100%;
     z-index: 999;
-    background: #ffffff;
+    background: #ffffff !important;
 }
 
 .footer_wrap {
@@ -47,7 +51,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
-
 }
 
 .footer_contact_wrap {
@@ -100,9 +103,10 @@ body {
     color: #000000;
 }
 
-@media (max-width: 770px) {
-    .header_logo {
-        height: 55px;
+@media (max-width: 900px) {
+    body {
+        width: 100%;
+
     }
 
     .header_link_svg {

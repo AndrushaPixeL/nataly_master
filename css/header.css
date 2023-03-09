@@ -1,14 +1,16 @@
 .header {
+  white-space: nowrap;
   font-family: 'Comfortaa';
   position: sticky;
   top: 0;
   z-index: 999;
-  background: #ffffff;
+  opacity: .95;
+  background: #ffffff !important;
 
 }
 
 .header_wrap {
-  height: 10vh;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,6 +26,10 @@
   -webkit-user-select: none;
 }
 
+.horizontal_line {
+  border-top: solid 1px #edc0b4;
+}
+
 .menu_button {
   display: none;
   cursor: pointer;
@@ -31,7 +37,7 @@
 
 .menu_items {
   position: absolute;
-  right: 75px;
+  right: 35px;
   top: 45px;
   display: none;
   background-color: #fff;
@@ -52,77 +58,27 @@
   display: block;
 }
 
-@media (max-width: 767px) {
-  .header_soc {
-    display: none !important;
-  }
-
-  .menu_button {
-    font-family: 'Comfortaa';
-    display: block !important;
-    background-color: transparent;
-    border: none;
-    outline: none;
-  }
-
-  .menu_button_icon {
-    height: 30px;
-  }
-}
-
-.header_wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.header_logo {
-  max-height: 40px;
-  max-width: 100%;
-}
 
 .header_links {
   display: flex;
   align-items: center;
+  list-style-type: none;
+  font-size: 14px;
+  gap: 10px;
 }
 
-.header_link_item {
-  margin-left: 20px;
-  color: #000;
+.header_links>li>a {
   text-decoration: none;
-  font-size: 16px;
+  color: black;
 }
 
-.header_link_item:hover {
-  text-decoration: underline;
+.header_links>li>a:hover {
   color: #ebaf9f;
   transition: all .1s ease-out;
 }
 
-@media (max-width: 767px) {
-  .header_logo {
-    max-height: 30px;
-    margin-right: auto;
-  }
-
-  .header_links {
-    display: none;
-  }
-
-  .header_link_item {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-    font-size: 24px;
-    color: #4489c8;
-    text-decoration: none;
-  }
-
-  .menu_button {
-    display: none;
-  }
+.current-menu-item>a {
+  color: #ebaf9f !important;
 }
 
 .header_soc {
@@ -146,4 +102,64 @@
 
 .header_link_svg {
   height: 35px;
+}
+
+.header_link_item>li>a {
+  color: black !important;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  header {
+    opacity: 1;
+  }
+
+  .header_links {
+    display: none;
+  }
+
+  .header_link_item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0px -25px;
+    list-style-type: none;
+    font-size: 20px;
+    gap: 5px;
+  }
+
+  .header_link_item>li>a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .header_link_item>li>a:hover {
+    text-decoration: underline;
+    color: #ebaf9f;
+    transition: all .1s ease-out;
+  }
+
+  .menu_button {
+    display: none;
+  }
+
+  .header_soc {
+    display: none !important;
+  }
+
+  .menu_button {
+    font-family: 'Comfortaa';
+    display: block !important;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .menu_button_icon {
+    height: 30px;
+  }
+
+  .menu_button_iconBG {
+    background-color: rgb(197, 193, 193);
+  }
+
 }
