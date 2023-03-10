@@ -21,6 +21,87 @@ body {
     padding: 0 10px;
 }
 
+.wpcf7-form {
+    padding-top: 60px;
+    width: 419px;
+    height: 487px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #edc0b4af;
+}
+
+.wpcf7-form>p {
+    font-size: 14px;
+    margin-top: 9px;
+    margin-left: 15%;
+}
+
+.wpcf7-form-control {
+    width: 292px;
+    border: 1px solid;
+    border-radius: 8px;
+    height: 25px;
+    background-color: transparent;
+    outline: none;
+}
+
+.wpcf7-textarea {
+    height: 50px;
+    resize: none;
+    border-radius: 8px;
+}
+
+.wpcf7-submit {
+    font-size: 17px;
+    font-weight: bold;
+    right: -113px;
+    top: 9px;
+    background-color: transparent;
+    width: 300px;
+    height: 40px;
+    box-shadow: 1px 1px 2px #a3a3a3;
+    border-radius: 8px;
+    color: #585858;
+}
+
+.wpcf7-submit:hover {
+    background-color: #efc2b5c5;
+    transition: all .2s ease-out;
+}
+
+.wpcf7-submit:active {
+    background-color: #e5b3a5;
+    box-shadow: 2px 2px 2px #a3a3a3;
+    transition: all .1s ease-out;
+
+}
+
+.wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #000000;
+    opacity: 0.75;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 24px;
+    position: relative;
+}
+
+.invalid {
+    font-size: 14px;
+}
+
+.sent {
+    font-size: 14px;
+}
+
+.wpcf7-response-output {
+    margin: -1.5em 0.5em 0em !important;
+}
+
 .content_wrap {
     height: 100%;
 }
