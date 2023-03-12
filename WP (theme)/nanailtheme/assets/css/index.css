@@ -2,123 +2,25 @@ html {
     font-family: 'Comfortaa';
     height: 100%;
 }
-
 body {
     font-family: 'Comfortaa';
-    margin: 0 auto;;
+    margin: 0 auto;
     width: 90%;
-/*     background: linear-gradient(45deg, #EECFBA, #C5DDE8); */
     background: linear-gradient(25deg, #efbda8, #a1d2e8);
 	background-attachment: fixed;
     min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+}
+.wrapper {
+	min-height: 100vh;
+    padding-bottom: 100px;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+.main {
+    height: 100%;
 	padding: 0 10px;
 }
 
-.wpcf7-form {
-    padding-top: 60px;
-    width: 379px;
-    height: 447px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    border: 1px solid #edc0b4b0;
-}
-
-.wpcf7-form>p {
-	font-size: 16px;
-	margin: 0 0 5px 40px;
-   }
-
-.wpcf7-form-control  {
-	width: 292px;
-    border: 1px solid;
-    border-radius: 8px;
-    height: 25px;
-    background-color: transparent;
-    outline: none;
-}
-
-.wpcf7-textarea {
-    height: 50px;
-    resize: none;
-    border-radius: 8px;
-}
-
-.wpcf7-submit {
-    font-size: 17px;
-	font-weight: bold;
-    right: -113px;
-    top: 9px;
-    background-color: transparent;
-    width: 300px;
-    height: 40px;
-    box-shadow: 1px 1px 2px #a3a3a3;
-    border-radius: 8px;
-    color: #585858;
-}
-
-.wpcf7-submit:hover {
-    background-color: #efc2b5c5;
-    transition: all .2s ease-out;
-}
-
-.wpcf7-submit:active {
-    background-color: #e5b3a5;
-    box-shadow: 2px 2px 2px #a3a3a3;
-    transition: all .1s ease-out;
-
-}
-
-.wpcf7-spinner {
-    background-color: #484c4e!important;
-    top: 5px;
-	width: 36px;
-    height: 36px;
-    left: 110px;
-}
-
-.wpcf7-spinner::before {
-    top: 6px;
-    left: 6px;
-    width: 9px;
-    height: 9px;
-    transform-origin: 12px 12px;
-}
-
-.invalid {
-    font-size: 14px;
-}
-
-.sent {
-    font-size: 14px;
-}
-.wpcf7-response-output {
-	margin: -2.5em 0.5em 0em!important;
-	border-radius: 8px;
-}
- 
-.grecaptcha-logo {
-    display: none !important;
-}
- 
-.grecaptcha-badge {
-    display: none !important;
-}
-
-.content_wrap {
-    height: 100%;
-}
-
 .content_none {
-    box-sizing: border-box;
-    min-height: 100%;
-    padding-bottom: 90px;
     padding-top: 50px;
     display: flex;
     align-items: center;
@@ -129,126 +31,11 @@ body {
     width: 80vh;
     border-radius: 60px;
 }
-
-.footer {
-    width: 100%;
-    z-index: 999;
-    background: #ffffff !important;
-	user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
+/*------------------captcha------------------*/
+.grecaptcha-logo {
+    display: none !important;
 }
-
-.footer_wrap {
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 30px;
- 	}
-
-.footer_contact_wrap {
-    width: max-content;
-    border-right: 2px solid #edc0b4;
-    padding: 10px 30px 0 0;
-}
-
-.footer_contact {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    text-decoration: none;
-    gap: 5px;
-}
-
-.footer_contact a {
-    display: flex;
-    align-items: flex-end;
-    text-decoration: none;
-    font-size: 14px;
-    gap: 5px;
-    color: black;
-}
-
-.footer_contact a:hover {
-    text-decoration: underline;
-    color: #ebaf9f;
-    transition: all .1s ease-out;
-}
-
-.footer_link_svg {
-    fill: #484c4e;
-    height: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    align-items: center;
-}
-
-.footer_logo {
-    height: 40px;
-    opacity: 0.5;
-}
-
-.footer_copy {
-    font-size: 12px;
-    padding: 5px;
-    text-align: center;
-    font-weight: 900;
-    opacity: 0.7;
-}
-
-.footer_copy a {
-    text-decoration: none;
-    color: #000000;
-}
-
-@media (max-width: 900px) {
-	body {
-    width: 100%;
-   
-}
-
-    .header_link_svg {
-        height: 40px;
-    }
-
-    .content_none_del {
-        width: 45vh;
-    }
-
-    .content_none {
-        padding-top: 100px;
-    }
-
-
-    .footer_contact_wrap {
-        width: 50%;
-        padding: 0;
-    }
-
-    .footer_contact {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        text-decoration: none;
-        gap: 5px;
-    }
-
-    .footer_contact a {
-        font-size: 20px;
-    }
-
-    .footer_link_svg {
-        height: 25px;
-    }
-
-    .footer_logo {
-        height: 45px;
-        opacity: 0.5;
-    }
-
-    .footer_copy {
-        font-size: 14px;
-    }
+ 
+.grecaptcha-badge {
+    display: none !important;
 }

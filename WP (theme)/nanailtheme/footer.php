@@ -1,4 +1,5 @@
- <footer class="footer">
+</div>
+<footer class="footer">
     <div class="horizontal_line"></div>
     <div class="footer_wrap">
 
@@ -21,7 +22,6 @@
     </div>
     <div class="footer_copy"> <a href="https://na-nail.ru/">NaNail</a> © 2023</div>
   </footer>
-   </div>
 <?php wp_footer(); ?>
 </body>
 </html>

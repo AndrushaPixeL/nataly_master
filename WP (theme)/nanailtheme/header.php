@@ -83,7 +83,7 @@
       </button>
 
       <div class="header_soc">
-        <div class="header_soc_icons">
+<!--         <div class="header_soc_icons">
           <a target="_blank" href="https://vk.com/nanail_vrn">
             <svg viewBox="0 0 64 64" class="header_link_svg">
               <g>
@@ -125,7 +125,7 @@
               </g>
             </svg>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="horizontal_line">
