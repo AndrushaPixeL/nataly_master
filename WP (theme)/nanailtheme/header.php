@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 
-<html <?php language_attributes(); ?>>
-<html prefix="og: //ogp.me/ns#">
-	
+<html <?php language_attributes(); ?>  prefix="og: //ogp.me/ns#">
 <head>
-<meta http-equiv="Content-type" content="text/html; charset=<?php bloginfo( "charset" ); ?>">
-<title><?php wp_title('-', true, 'right'); ?> <?php bloginfo('NA|NAIL'); ?></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=0.85, maximum-scale=1, user-scalable=0">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="NA|NAIL. Мастер маникюра, который готов сотворить любое чудо на твоих ноготках!">
-  <meta property="og:description"
-    content="Меня зовут Наталья и я мастер маникюра. Покажи мне картинку и случится волшебство. Hарисую аниме, игры, мультяшки, цветы и тд...">
-  <meta property="og:url" content="https://na-nail.ru/">
-  <meta property="og:image" content="https://na-nail.ru/wp-content/uploads/2023/03/NA_NAIL_snippet.png">
-  <meta property="og:site_name" content="na-nail.ru">
-  <meta property="og:image" content="https://na-nail.ru/wp-content/uploads/2023/03/NA_NAIL_snippet.png" />
-  <meta property="vk:image" content="https://na-nail.ru/wp-content/uploads/2023/03/NA_NAIL_snippet.png" />
-  <meta name="msapplication-TileColor" content="# ffffff">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="color-scheme" content="only light">
+<link rel="shortcut icon" href="https://na-nail.ru/favicon/favicon.ico">
+<link rel="icon" href="https://na-nail.ru/favicon/favicon.ico" type="image/x-imageicon">
+<link rel="apple-touch-icon" sizes="180x180" href="https://na-nail.ru/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://na-nail.ru/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://na-nail.ru/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://na-nail.ru/favicon/site.webmanifest">
+<link rel="mask-icon" href="https://na-nail.ru/favicon/safari-pinned-tab.svg" color="#efae9d">
+<meta name="apple-mobile-web-app-title" content="Na Nail">
+<meta name="application-name" content="Na Nail">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Мастер маникюра Воронеж. Наталья подарит твоим ноготкам сказочный облик ручной росписи, френч, как неизменную классику или выполнит любой другой дизайн на выбор! Чай и свежесваренный кофе в комплекте. Проводите время комфортно с удовольствием." />
+<meta property="og:type" content="website">
+<meta property="og:title" content="NaNail | Мастер маникюра в Воронеже, который готов сотворить любое чудо на твоих ноготках!">
+<meta property="og:description"
+    content="Мастер маникюра Воронеж. Наталья подарит твоим ноготкам сказочный облик ручной росписи, френч, как неизменную классику или выполнит любой другой дизайн на выбор! Чай и свежесваренный кофе в комплекте. Проводите время комфортно с удовольствием!">
+<meta property="og:url" content="https://na-nail.ru/">
+<meta property="og:site_name" content="NaNail | Мастер маникюра в Воронеже">
+<meta property="vk:image" content="https://na-nail.ru/wp-content/uploads/2023/03/NA_NAIL_snippet.png" />
+<title><?php wp_title('|', true, 'right'); ?> <?php bloginfo('NaNail'); ?></title>
 <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+
+<body>
 <div class="wrapper">
 <header class="header">
     <div class="header_wrap">

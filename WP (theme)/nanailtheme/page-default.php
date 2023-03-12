@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Контакты
+ * Template Name: По умолчанию
  */
 ?>
 
@@ -12,8 +12,7 @@
 		<?php the_content(); ?>
 	<?php endwhile; endif; ?>
 	
-</div>
-</section>
+</div></section>
 	
 
 <?php get_footer(); ?>

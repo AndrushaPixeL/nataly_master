@@ -11,4 +11,4 @@
       <img class="content_none_del" src="<?php echo get_template_directory_uri() ?>/assets/img/devdovers.gif">
     </div>
   </section>
-  <?php get_footer(); ?>
+ <?php get_footer(); ?>

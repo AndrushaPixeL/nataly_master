@@ -11,3 +11,9 @@ function nail_assets() {
 
 add_action("wp_enqueue_scripts", "nail_assets");
 add_theme_support("custom-logo");
+
+function remove_nbsp_from_content($content) {
+   $content = preg_replace('/&nbsp;/', ' ', $content);
+   return $content;
+}
+add_filter('the_content', 'remove_nbsp_from_content');
