@@ -1,207 +1,608 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
-<html prefix="og: //ogp.me/ns#">
+<html>
+<!-- <html <?php language_attributes(); ?> > -->
 
 <head>
-  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=0.85, maximum-scale=1, user-scalable=0">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon//apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon//favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/img/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#f5a995">
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="icon" href="https://na-nail.ru/favicon/favicon.ico" type="image/x-imageicon">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://na-nail.ru/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://na-nail.ru/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://na-nail.ru/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://na-nail.ru/favicon/site.webmanifest">
+  <link rel="mask-icon" href="https://na-nail.ru/favicon/safari-pinned-tab.svg" color="#efae9d">
+  <meta name="apple-mobile-web-app-title" content="Na Nail">
+  <meta name="application-name" content="Na Nail">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="vk:image" content="https://na-nail.ru/wp-content/uploads/2023/03/NA_NAIL_snippet.png" />
+
   <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/form.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="NA|NAIL. Мастер маникюра, который готов сотворить любое чудо на твоих ноготках!">
-  <meta property="og:description"
-    content="Меня зовут Наталья и я мастер маникюра. Покажи мне картинку и случится волшебство. Hарисую аниме, игры, мультяшки, цветы и тд...">
-  <meta property="og:url" content="https://na-nail.ru/">
-  <meta property="og:image" content="https://na-nail.ru/wp-content/uploads/2023/03/NA_NAIL_snippet.png">
-  <meta property="og:site_name" content="na-nail.ru">
-  <meta property="og:image" content="https://na-nail.ru/wp-content/uploads/2023/03/NA_NAIL_snippet.png" />
-  <meta property="vk:image" content="https://na-nail.ru/wp-content/uploads/2023/03/NA_NAIL_snippet.png" />
-  <meta name="msapplication-TileColor" content="# ffffff">
-  <meta name="theme-color" content="#ffffff">
-  <title>NA | NAIL</title>
+  <title>
+    <!-- <?php wp_title('|', true, 'right'); ?> <?php bloginfo('NaNail'); ?> -->
+  </title>
+  <!-- <?php wp_head(); ?> -->
 </head>
 
-<body class="body">
+<body>
+  <div class="wrapper_content">
+    <header class="header">
+      <div class="header_wrap">
+        <div class='header_link_wrap'>
+          <img class="header_logo" src="img/logo/logo.png" style="height: 50px;">
+          <!-- <?php the_custom_logo();?> -->
 
-  <header class="header">
-    <div class="header_wrap">
-      <img class="header_logo" src="img/logo/logo.png">
-      <div class="header_link_menu">
-        <ul class="header_links">
+          <div class="header_link_menu">
+            <!-- <?php wp_nav_menu( array(
+	'container'       => 'ul',
+	'container_class' => '',
+	'container_id'    => '',
+	'menu_class'      => 'header_links',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => "",
+) ); ?> -->
+            <ul class="header_links">
 
-          <li class="header_links">
-            <a href="#">Главная</a>
-          </li>
-          <li class="header_links">
-            <a href="#">Услуги</a>
-          </li>
-          <li class="header_links">
-            <a href="#">Обо мне</a>
-          </li>
-          <li class="header_links">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <button class="menu_button">
-        <svg class="menu_button_icon" viewBox="0 -53 384 384">
-          <path
-            d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
-          <path
-            d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
-          <path
-            d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
-        </svg>
-        <div class="menu_items">
-          <li class="header_link_item">
-            <a href="#">Главная</a>
-          </li>
-          <li class="header_link_item">
-            <a href="#">Услуги</a>
-          </li>
-          <li class="header_link_item">
-            <a href="#">Обо мне</a>
-          </li>
-          <li class="header_link_item">
-            <a href="#">Контакты</a>
-          </li>
+              <li class="header_links">
+                <a href="#">Главная</a>
+              </li>
+              <li class="header_links">
+                <a href="#">Услуги</a>
+              </li>
+              <li class="header_links">
+                <a href="#">Обо мне</a>
+              </li>
+              <li class="header_links">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+
+          </div>
         </div>
-      </button>
+        <div class="header_buttons">
+          <div href="#" class="eModal-1 header_sign_btn header_sign_mobile">
+            <svg viewBox="0 0 512 512" class='sign_svg'>
+              <path
+                d="M441 58.9L453.1 71c9.4 9.4 9.4 24.6 0 33.9L424 134.1 377.9 88 407 58.9c9.4-9.4 24.6-9.4 33.9 0zM209.8 256.2L344 121.9 390.1 168 255.8 302.2c-2.9 2.9-6.5 5-10.4 6.1l-58.5 16.7 16.7-58.5c1.1-3.9 3.2-7.5 6.1-10.4zM373.1 25L175.8 222.2c-8.7 8.7-15 19.4-18.3 31.1l-28.6 100c-2.4 8.4-.1 17.4 6.1 23.6s15.2 8.5 23.6 6.1l100-28.6c11.8-3.4 22.5-9.7 31.1-18.3L487 138.9c28.1-28.1 28.1-73.7 0-101.8L474.9 25C446.8-3.1 401.2-3.1 373.1 25zM88 64C39.4 64 0 103.4 0 152V424c0 48.6 39.4 88 88 88H360c48.6 0 88-39.4 88-88V312c0-13.3-10.7-24-24-24s-24 10.7-24 24V424c0 22.1-17.9 40-40 40H88c-22.1 0-40-17.9-40-40V152c0-22.1 17.9-40 40-40H200c13.3 0 24-10.7 24-24s-10.7-24-24-24H88z" />
+            </svg>
+            <p class='header_sign_text'>Записаться</p>
+          </div>
 
-      <div class="header_soc">
-        <div class="header_soc_icons">
-          <a target="_blank" href="https://vk.com/nanail_vrn">
-            <svg viewBox="0 0 64 64" class="header_link_svg">
-              <g>
-                <rect height="64" rx="14" ry="14" width="64" fill="#4489c8" />
-                <path fill="#fff"
-                  d="M9.62,19.77H17.3a.79.79,0,0,1,.74.51c.85,2.19,4.38,10.76,7.61,11.46,2.4,0,1.55-11.4-1.5-11.4-.8,0,1.42-1.42,1.57-1.48a16.38,16.38,0,0,1,8.66,0c1.53.64,1.79,2.43,1.83,3.95s-1.7,8,.59,8.7c3,.92,6.86-8.49,7.76-10.8a.79.79,0,0,1,.74-.5h8.55a.8.8,0,0,1,.74,1.11,74.74,74.74,0,0,1-6.31,11.52,1.59,1.59,0,0,0,.16,2C51,37.58,58,45.34,54,45.34H45.37a1.57,1.57,0,0,1-1.18-.53c-1.34-1.48-5.24-5.6-7-5.27-1.46.27-1.6,2.75-1.53,4.37a1.6,1.6,0,0,1-1.48,1.68c-1.53.09-3.62.13-3.81.12-6.1-.39-9.71-4.46-13.16-9A56.33,56.33,0,0,1,8.86,20.83.81.81,0,0,1,9.62,19.77Z" />
-              </g>
+          <button class="menu_button">
+            <svg class="menu_button_icon" viewBox="0 -53 384 384">
+              <path
+                d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+              <path
+                d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+              <path
+                d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
             </svg>
-          </a>
-          <a target="_blank" href="https://instagram.com/masternail_vrn?igshid=NDk5N2NlZjQ=">
-            <svg viewBox="0 0 512 512" class="header_link_svg">
-              <style type="text/css">
-                .st0 {
-                  fill: url(#SVGID_1_);
-                }
-              </style>
-              <g>
-                <radialGradient cx="225.4737" cy="222.8046"
-                  gradientTransform="matrix(14.2175 0 0 14.2171 -3055.7039 -2615.9958)" gradientUnits="userSpaceOnUse"
-                  id="SVGID_1_" r="47.7212">
-                  <stop offset="9.693880e-02" style="stop-color:#FFD87A" />
-                  <stop offset="0.1426" style="stop-color:#FCCE78" />
-                  <stop offset="0.2263" style="stop-color:#F5B471" />
-                  <stop offset="0.3378" style="stop-color:#EB8D65" />
-                  <stop offset="0.449" style="stop-color:#E36058" />
-                  <stop offset="0.6786" style="stop-color:#CD3694" />
-                  <stop offset="1" style="stop-color:#6668B0" />
-                </radialGradient>
-                <path class="st0"
-                  d="M512,395.1c0,64.6-52.3,116.9-116.9,116.9H116.9C52.3,512,0,459.7,0,395.1V117C0,52.4,52.4,0,117,0h276.3   C458.9,0,512,53.1,512,118.7V395.1z" />
-                <g>
-                  <path fill="#FFFFFF"
-                    d="M327.2,70.6H184.8c-63.1,0-114.3,51.2-114.3,114.3v142.3c0,63.1,51.1,114.2,114.3,114.2h142.3    c63.1,0,114.2-51.1,114.2-114.2V184.9C441.4,121.7,390.3,70.6,327.2,70.6z M405.8,313.5c0,51-41.3,92.3-92.3,92.3h-115    c-51,0-92.3-41.3-92.3-92.3v-115c0-51,41.3-92.3,92.3-92.3h115c51,0,92.3,41.4,92.3,92.3V313.5z" />
-                  <path fill="#FFFFFF"
-                    d="M261,159c-54,0-97.7,43.7-97.7,97.7c0,53.9,43.7,97.7,97.7,97.7c53.9,0,97.7-43.7,97.7-97.7    C358.6,202.7,314.9,159,261,159z M261,315.4c-32.5,0-58.8-26.3-58.8-58.8c0-32.5,26.3-58.8,58.8-58.8c32.4,0,58.8,26.3,58.8,58.8    C319.7,289.1,293.4,315.4,261,315.4z" />
-                  <path fill="#FFFFFF"
-                    d="M376.7,157.5c0,13.7-11.1,24.8-24.8,24.8c-13.7,0-24.8-11.1-24.8-24.8c0-13.7,11.1-24.9,24.8-24.9    C365.6,132.6,376.7,143.7,376.7,157.5z" />
-                </g>
-              </g>
-            </svg>
-          </a>
+            <div class="menu_items">
+              <!-- <?php wp_nav_menu( array(
+	'container'       => 'ul',
+	'container_class' => '',
+	'container_id'    => '',
+	'menu_class'      => 'header_link_item',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => "",
+) ); ?> -->
+              <li class="header_link_item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="header_link_item">
+                <a href="#">Услуги</a>
+              </li>
+              <li class="header_link_item">
+                <a href="#">Обо мне</a>
+              </li>
+              <li class="header_link_item">
+                <a href="#">Контакты</a>
+              </li>
+            </div>
         </div>
+        </button>
+
+        <div href="#" class="eModal-1 header_sign_btn">
+          <svg viewBox="0 0 512 512" class='sign_svg'>
+            <path
+              d="M441 58.9L453.1 71c9.4 9.4 9.4 24.6 0 33.9L424 134.1 377.9 88 407 58.9c9.4-9.4 24.6-9.4 33.9 0zM209.8 256.2L344 121.9 390.1 168 255.8 302.2c-2.9 2.9-6.5 5-10.4 6.1l-58.5 16.7 16.7-58.5c1.1-3.9 3.2-7.5 6.1-10.4zM373.1 25L175.8 222.2c-8.7 8.7-15 19.4-18.3 31.1l-28.6 100c-2.4 8.4-.1 17.4 6.1 23.6s15.2 8.5 23.6 6.1l100-28.6c11.8-3.4 22.5-9.7 31.1-18.3L487 138.9c28.1-28.1 28.1-73.7 0-101.8L474.9 25C446.8-3.1 401.2-3.1 373.1 25zM88 64C39.4 64 0 103.4 0 152V424c0 48.6 39.4 88 88 88H360c48.6 0 88-39.4 88-88V312c0-13.3-10.7-24-24-24s-24 10.7-24 24V424c0 22.1-17.9 40-40 40H88c-22.1 0-40-17.9-40-40V152c0-22.1 17.9-40 40-40H200c13.3 0 24-10.7 24-24s-10.7-24-24-24H88z" />
+          </svg>
+          <p class='header_sign_text'>Записаться</p>
+        </div>
+
+
       </div>
-    </div>
-    <div class="horizontal_line"></div>
-  </header>
-
-  <section>
-    <form action="/contact/#wpcf7-f153-p78-o1" method="post" class="wpcf7-form init" aria-label="Контактная форма"
-      novalidate="novalidate" data-status="init">
-      <div style="display: none;">
-        <input type="hidden" name="_wpcf7" value="153">
-        <input type="hidden" name="_wpcf7_version" value="5.7.4">
-        <input type="hidden" name="_wpcf7_locale" value="ru_RU">
-        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f153-p78-o1">
-        <input type="hidden" name="_wpcf7_container_post" value="78">
-        <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+      <div class="horizontal_line">
       </div>
-      <p><label> Имя <b>*</b><br>
-          <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
-              class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" autocomplete="name" aria-required="true"
-              aria-invalid="false" value="" type="text" name="your-name"></span> </label>
-      </p>
-      <p><label> Номер телефона <b>*</b><br>
-          <span class="wpcf7-form-control-wrap" data-name="tel-409"><input size="40"
-              class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
-              aria-required="true" aria-invalid="false" placeholder="8-912-345-67-89" value="" type="tel"
-              name="tel-409"></span> </label>
-      </p>
-      <p><label> Соц. сеть для связи<br>
-          <span class="wpcf7-form-control-wrap" data-name="url-730"><input size="40"
-              class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-url" aria-invalid="false" value=""
-              type="url" name="url-730"></span> </label>
-      </p>
-      <p><label> Удобные дата и время для записи<br>
-          <span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10"
-              class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="your-message"></textarea></span>
-        </label>
-      </p>
-      <p> <b> Важно!</b> Если вы не указали социальную сеть - мы вам позвоним. <br> <b>*</b> обязательное поле</p>
-      <p><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="Записаться"><span
-          class="wpcf7-spinner"></span>
-      </p>
-      <div class="wpcf7-response-output" aria-hidden="true"></div>
-    </form>
-  </section>
+    </header>
 
-  <section class="content_wrap">
-    <div class="content_none">
-      <img class="content_none_del" src="/img/devdovers.gif">
+
+    <div class="main" id="main">
+
+      <section>
+        <div>
+          <h3>Давай знакомиться? Немного обо мне:</h3>
+          <p>Меня зовут <b>Наталья</b>, я опытный мастер маникюра с опытом работы более 5-ти лет! </p>
+          <p>Готова всегда сотворить <b>любое </b>чудо на твоих ноготках: </p>
+          <p><b>Рисую </b>цветы, игры, мультяшки, аниме и многое другое! Покажи мне картинку и случится волшебство.</p>
+          <p><b>Люблю </b>воплощать корейские дизайны. Согласись, выглядят очень необычно.</p>
+          <p>И куда же без <b>аэрографии</b> (градиент/теневые рисунки).</p>
+          <p>Давай <b>начнем воплощать</b> мечты в <b>реальность</b>!</p>
+          <p>Буду рада тебя видеть!</p>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div>
+          <h3>Уют и комфорт!</h3>
+          <p>Ты всегда будешь чувствовать себя, как дома, ведь гораздо приятнее приводить свои ноготки в порядок <b>в
+              уютной и комфортной атмосфере</b>!</p>
+          <p>В твоем распоряжении:</p>
+          <p>Зерновой кофе: экспрессо, латте, капучино или американо. Чай в ассортименте</p>
+          <p>Не ограниченный высокоскоростной Wi-Fi</p>
+          <p>Smart-TV с популярными онлайн кинотеатрами ( Okko, КиноПоиск, YouTube), где можно продолжить смотреть
+            любимый сериал или посмотреть фильм, который ты давно хотела посмотреть, но на это не было времени! </p>
+          <p>Если Вы пропустили любимую передачу по телевизору, то с лёгкостью ее можно посмотреть у меня. Архив
+            телепередач за 3 для позволяет не пропустить то, что Вам интересно!</p>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div>
+          <h3>Почему выбирают меня?</h3>
+          <p>Мастер маникюра с опытом работы более 5 лет.</p>
+          <p>Инструменты всегда проходят стерилизацию по нормам СанПиН.</p>
+          <p>Все расходники одноразовые.</p>
+          <p>Срок носки покрытия 3-4 недели. </p>
+          <p>Если по моей вине в течении 2-х недель происходят отслойки или другая ситуация – я вам сделаю бесплатную
+            коррекцию ноготка.</p>
+          <p>У меня около 100 цветников гель-лаков и более 20 цветов красок для ручной росписи.</p>
+          <p>Нахожу индивидуальный подход к каждому клиенту.</p>
+          <p>Всегда при работе уделяю внимание не только красоте ногтей, но и их здоровью.</p>
+          <p>Фиксированные цены на услуги. Все прозрачно.</p>
+          <p>Прислушиваюсь к мнению клиентов, стараюсь повышать качество сервиса.</p>
+          <p>Со мной всегда есть о чем поболтать. Тебе никогда не будет скучно!</p>
+          </div=>
+      </section>
+
+
+
+      <section>
+        <div>
+          <div>
+
+
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div class="is-nowrap is-layout-flex wp-container-1 wp-block-group">
+                        <p>Мои социальные сети:</p>
+                        <div class="wrap_link_svg"><a target="_blank" href="https://vk.com/nanail_vrn"
+                            rel="noopener"><svg viewBox="0 0 448 512" class="section_link_svg">
+                              <path
+                                d="M31.4907 63.4907C0 94.9813 0 145.671 0 247.04V264.96C0 366.329 0 417.019 31.4907 448.509C62.9813 480 113.671 480 215.04 480H232.96C334.329 480 385.019 480 416.509 448.509C448 417.019 448 366.329 448 264.96V247.04C448 145.671 448 94.9813 416.509 63.4907C385.019 32 334.329 32 232.96 32H215.04C113.671 32 62.9813 32 31.4907 63.4907ZM75.6 168.267H126.747C128.427 253.76 166.133 289.973 196 297.44V168.267H244.16V242C273.653 238.827 304.64 205.227 315.093 168.267H363.253C359.313 187.435 351.46 205.583 340.186 221.579C328.913 237.574 314.461 251.071 297.733 261.227C316.41 270.499 332.907 283.63 346.132 299.751C359.357 315.873 369.01 334.618 374.453 354.747H321.44C316.555 337.262 306.614 321.61 292.865 309.754C279.117 297.899 262.173 290.368 244.16 288.107V354.747H238.373C136.267 354.747 78.0267 284.747 75.6 168.267Z">
+                              </path>
+                            </svg></a>
+                          <a target="_blank" href="https://instagram.com/masternail_vrn" rel="noopener">
+                            <svg viewBox="0 0 32 32" class="section_link_svg">
+                              <path
+                                d="M6,2h20c2.2,0,4,1.8,4,4v20c0,2.2-1.8,4-4,4H6c-2.2,0-4-1.8-4-4V6C2,3.8,3.8,2,6,2z">
+                              </path>
+                              <g>
+                                <path fill="#FFFFFF"
+                                  d="M21.3,9.7c-0.6,0-1.2,0.5-1.2,1.2c0,0.7,0.5,1.2,1.2,1.2c0.7,0,1.2-0.5,1.2-1.2C22.4,10.2,21.9,9.7,21.3,9.7z">
+                                </path>
+                                <path fill="#FFFFFF"
+                                  d="M16,11.2c-2.7,0-4.9,2.2-4.9,4.9c0,2.7,2.2,4.9,4.9,4.9s4.9-2.2,4.9-4.9C21,13.4,18.8,11.2,16,11.2z M16,19.3   c-1.7,0-3.2-1.4-3.2-3.2c0-1.7,1.4-3.2,3.2-3.2c1.7,0,3.2,1.4,3.2,3.2C19.2,17.9,17.8,19.3,16,19.3z">
+                                </path>
+                                <path fill="#FFFFFF"
+                                  d="M20,6h-8c-3.3,0-6,2.7-6,6v8c0,3.3,2.7,6,6,6h8c3.3,0,6-2.7,6-6v-8C26,8.7,23.3,6,20,6z M24.1,20   c0,2.3-1.9,4.1-4.1,4.1h-8c-2.3,0-4.1-1.9-4.1-4.1v-8c0-2.3,1.9-4.1,4.1-4.1h8c2.3,0,4.1,1.9,4.1,4.1V20z">
+                                </path>
+                              </g>
+                            </svg></a>
+                          <a target="_blank" href="https://t.me/NaNail_vrn" rel="noopener">
+                            <svg viewBox="0 0 512 512" class="section_link_svg">
+                              <path
+                                d="m334.448 182.825c-.771.41-86.4 53.034-128.083 78.812-6.278 3.883-8.554 8.758-6.7 15.559 4.258 15.583 8.918 31.056 13.349 46.593.61 2.137 1.208 4.235 3.828 4.271 3.256.042 3.405-2.787 3.739-4.946 1.094-7.083 2.276-14.176 2.819-21.311a26.3 26.3 0 0 1 9.008-18.139c28.422-26.256 97.466-90.491 103.622-96.291 2.021-1.9 1.858-4.88-1.582-4.548z">
+                              </path>
+                              <path
+                                d="m420 36h-328a56 56 0 0 0 -56 56v328a56 56 0 0 0 56 56h328a56 56 0 0 0 56-56v-328a56 56 0 0 0 -56-56zm-69.229 335.042c-2 9.622-7.161 11.705-15.192 5.874q-30.225-21.944-60.427-43.916c-8.468-6.157-11.933-5.957-20.166.846q-15.154 12.524-30.463 24.862c-8.216 6.605-13.031 5.1-16.121-4.833-7.602-24.453-15.318-48.875-22.702-73.389-1.169-3.879-3.08-5.924-6.775-7.259-18.749-6.778-37.424-13.756-56.126-20.664-3.7-1.37-7.343-2.844-9.76-6.231 0-6.059 1.781-8.949 7.6-11.186q132.575-50.973 265.088-102.1c5.875-2.271 10.091-1.531 13.242 4-.004 1.691-34.378 167.68-48.198 233.996z">
+                              </path>
+                            </svg></a>
+                        </div>
+                      </div>
+                      <p>Там я могу <b>предложить </b>консультации и <b>ответить </b>на интересующие вопросы!</p>
+                      <p>Я частный мастер. Принимаю по <b>предварительной записи</b>на дому.</p>
+                      <p>Адрес: г. Воронеж, ул., Димитрова 153.</p>
+                      <p><b>Левобережный район</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <p>Отзывы в <a href="https://vk.com/nanail_vrn" target="_blank" rel="noreferrer noopener">группе
+                            ВК</a> или</p>
+                        <p> на Яндекс Картах:</p>
+                        <div style="width:400px;height:400px;overflow:hidden;position:relative;"><iframe
+                            style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box"
+                            src="https://yandex.ru/maps-reviews-widget/181144706398?comments"></iframe><a
+                            href="https://yandex.ru/maps/org/nanail/181144706398/" target="_blank"
+                            style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box"
+                            rel="noopener">NaNail на карте Воронежа — Яндекс Карты</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+
+
+      <section class="ya_map">
+        <div>
+          <p style="padding-left:20px;margin: 0 0 15px;"> <b>Адрес </b>на карте:
+          </p>
+          <div style="position:relative;overflow:hidden;"><a
+              href="https://yandex.ru/maps/org/nanail/181144706398/?utm_medium=mapframe&amp;utm_source=maps"
+              style="color:#eee;font-size:12px;position:absolute;top:0px;">NaNail</a><a
+              href="https://yandex.ru/maps/193/voronezh/category/nail_salon/20476284572/?utm_medium=mapframe&amp;utm_source=maps"
+              style="color:#eee;font-size:12px;position:absolute;top:14px;">Ногтевая студия в Воронеже</a><iframe
+              loading="lazy"
+              src="https://yandex.ru/map-widget/v1/?ll=39.285469%2C51.661369&amp;mode=search&amp;oid=181144706398&amp;ol=biz&amp;z=16.4"
+              width="100%" height="400" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section>
+        <div>
+          <div>
+
+
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <p><b>Будь </b>в курсе последних новостей. </p>
+                        <p><b>Подпишись </b>на группу ВКонтакте! </p>
+                        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+
+                        <!-- VK Widget -->
+                        <div id="vk_groups" style="width: 400px; height: 510px; background: none;"><iframe
+                            name="fXDcf7a9" frameborder="0"
+                            src="https://vk.com/widget_community.php?app=0&amp;width=400px&amp;_ver=1&amp;gid=215753928&amp;mode=4&amp;color1=&amp;color2=&amp;color3=&amp;class_name=&amp;no_cover=1&amp;wide=1&amp;height=510&amp;url=https%3A%2F%2Fna-nail.ru%2Fcontact%2F&amp;referrer=https%3A%2F%2Fna-nail.ru%2F&amp;title=NaNail%20%7C%20%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%D0%BC%D0%B0%D0%BD%D0%B8%D0%BA%D1%8E%D1%80%D0%B0%20%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6&amp;186fbd3d506"
+                            width="400" height="510" scrolling="no" id="vkwidget1"
+                            style="overflow: hidden; height: 510px;"></iframe></div>
+                        <script type="text/javascript">
+                            // VK.Widgets.Group("vk_groups", { mode: 4, wide: 1, no_cover: 1, width: "400", height: "510" }, 215753928);
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <p><b>Запишись</b> через соц. сети…</p>
+                        <p>…или <b>заполни </b>форму ниже: </p>
+                      </div>
+                      <div class="wp-block-contact-form-7-contact-form-selector">
+                        <div class="wpcf7 js" id="wpcf7-f153-p78-o1" lang="ru-RU" dir="ltr">
+                          <div class="screen-reader-response">
+                            <p role="status" aria-live="polite" aria-atomic="true"></p>
+                            <ul></ul>
+                          </div>
+                          <form action="/contact/#wpcf7-f153-p78-o1" method="post" class="wpcf7-form init"
+                            aria-label="Контактная форма" novalidate="novalidate" data-status="init">
+                            <div style="display: none;">
+                              <input type="hidden" name="_wpcf7" value="153">
+                              <input type="hidden" name="_wpcf7_version" value="5.7.4">
+                              <input type="hidden" name="_wpcf7_locale" value="ru_RU">
+                              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f153-p78-o1">
+                              <input type="hidden" name="_wpcf7_container_post" value="78">
+                              <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                              <input type="hidden" name="_wpcf7_recaptcha_response"
+                                value="03AFY_a8VVfAs2vnAXf_OqUKmyXR5qCF-pVTud23iKblqpbD1ez2JN_inDJ_mgikH-p20trVISLGxlozuNXIOovO1Ix065NgouvClyr79Y0kRIRYKtzBo1BpTO1LFl1NigkdEMckQyiV1_VzCs3XufKR6-OK4ntWlLHahzcwsOWC-vqKlA2M58Io3ILi3KdKjaolS17rlR63C6nDQxrnmuZCl0Q0ux7JyCQcy50OohIsSILx66ZE7RI1H8KxwlO-i137f6WJSC0R8F8x_q-4OHHceNoYscdB9dMBaSEcPSVBMiP43I4dOdUbDh5bp4qTfJ6PZTEJgNN5VhTxQpPHOs7Y1Yz4qvCXvc9kMTpzYP1SiOXorKSwY7_eqDv82tFThSvReEJ3_xbUSuniWvcGRlNOtlbuQxpw5UnQcJuuzRpsjPDkalJrbbz1seVlhbF_9J4r07wFsAwwmsB-x87WbOta6zXnjUYU7Kt-9Lf7Yt6eQ0meMhKNLz03s06vH1OIGknqmF-oLNk5Ys">
+                            </div>
+                            <p><label> Имя<br>
+                                <span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
+                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    autocomplete="name" aria-required="true" aria-invalid="false" value="" type="text"
+                                    name="your-name"></span> </label>
+                            </p>
+                            <p><label> Номер телефона<br>
+                                <span class="wpcf7-form-control-wrap your-phone"><input type="tel" value=""
+                                    name="your-phone"
+                                    class="wpcf7-form-control wpcf7mf-mask wpcf7-mask wpcf7-validates-as-required"
+                                    size="40" aria-required="1" aria-invalid="" placeholder="+7 (___) ___ __ __"
+                                    data-mask="+7 (___) ___ __ __"></span> </label>
+                            </p>
+                            <p><label> Ссылка на социальную сеть для связи<br>
+                                <span class="wpcf7-form-control-wrap" data-name="url"><input size="40"
+                                    class="wpcf7-form-control wpcf7-text wpcf7-url wpcf7-validates-as-url"
+                                    aria-invalid="false" value="" type="url" name="url"></span> </label>
+                            </p>
+                            <p><label> Желательная дата записи<br>
+                                <span class="wpcf7-form-control-wrap" data-name="date"><input
+                                    class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date"
+                                    id="datePicker" aria-required="true" aria-invalid="false" value="" type="date"
+                                    name="date" min="2023-03-20"></span> </label>
+                            </p>
+                            <p><label> Услуга<br>
+                                <span class="wpcf7-form-control-wrap" data-name="services"><select
+                                    class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                    aria-required="true" aria-invalid="false" name="services">
+                                    <option value="">—Выберите вариант—</option>
+                                    <option value="Маникюр с покрытием/Коррекция">Маникюр с покрытием/Коррекция
+                                    </option>
+                                    <option value="Комбинированный маникюр">Комбинированный маникюр</option>
+                                    <option value="Корейский дизайн “Аврора”">Корейский дизайн “Аврора”</option>
+                                    <option value="3D Роза">3D Роза</option>
+                                    <option value="Аэрография/Градиент (Ручной)">Аэрография/Градиент (Ручной)
+                                    </option>
+                                    <option value="Выкладной френч">Выкладной френч</option>
+                                    <option value="Френч">Френч</option>
+                                    <option value="Наращивание">Наращивание</option>
+                                    <option value="Ручная роспись">Ручная роспись</option>
+                                  </select></span> </label>
+                            </p>
+                            <p><span class="wpcf7-form-control-wrap" data-name="policy"><span
+                                  class="wpcf7-form-control wpcf7-acceptance"><span
+                                    class="wpcf7-list-item"><label><input type="checkbox" name="policy" value="1"
+                                        aria-invalid="false"><span class="wpcf7-list-item-label">Заполняя форму <b>я
+                                          подтверждаю</b> своё<br>согласие с <a target="_blank"
+                                          href="https://na-nail.ru/policy/">Политикой
+                                          конфиденциальности</a></span></label></span></span></span>
+                            </p>
+                            <p><input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit"
+                                value="Записаться" disabled=""><span class="wpcf7-spinner"></span>
+                            </p>
+                            <div class="wpcf7-response-output" aria-hidden="true"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section>
+        <div>
+          <div>
+
+
+            <div>
+              <div>
+                <div>
+                  <p><b>Услуги и цены:</b></p>
+                  <figur>
+                    <table
+                      style="background:linear-gradient(21deg,rgba(160,209,232,0.36) 0%,rgba(240,189,168,0.36) 97%)">
+                      <tbody>
+                        <tr>
+                          <td><b>Основные услуги:</b></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Маникюр с покрытием / Коррекция</td>
+                          <td>1200 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Комбинированный маникюр<b> </b>(без покрытия
+                            / мужской)</td>
+                          <td>600 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Выкладной френч</td>
+                          <td>1900 ₽</td>
+                        </tr>
+                        <tr>
+                          <td><b>Дополнительные услуги:</b></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Корейский дизайн “Аврора”<b> </b>(лунный
+                            камень) </td>
+                          <td>500 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>3D Роза</td>
+                          <td>300 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Аэрография / Градиент (Ручной)</td>
+                          <td>500 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Френч</td>
+                          <td>200 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Наращивание<b> </b></td>
+                          <td>400 ₽</td>
+                        </tr>
+                        <tr>
+                          <td>Ручная<b> </b>роспись</td>
+                          <td>от 300 ₽</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </figur>
+                </div>
+              </div>
+            </div>
+
+
+            <div>
+              <div>
+                <div>
+                  <p><b>Маникюр с покрытием / Коррекция</b> включает: </p>
+                  <ul>
+                    <li>снятие старого покрытия, </li>
+                    <li>маникюр, </li>
+                    <li>ремонт ногтей, </li>
+                    <li>покрытие, </li>
+                    <li>укрепление гелем, </li>
+                    <li>несложный дизайн.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <div>
+                    <p><b>Ручная роспись</b> – это трудоемкий процесс, который может длиться не один час. Это зависит от
+                      сложности выбранного рисунка.</p>
+                    <p>Если вы планируете <b>украсить </b>свои ноготки ручной росписью – <b>сообщайте заранее</b>. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
     </div>
-  </section>
 
 
-
-
+  </div>
   <footer class="footer">
     <div class="horizontal_line"></div>
     <div class="footer_wrap">
+      <div class="footer_left_wrap">
+        <div class="footer_contact_wrap">
+          <div class="footer_contact">
+            <div class="footer_mobile_wrap_none" style="opacity: 0.5;">
+              <!-- <?php the_custom_logo();?> -->
+              <img class="header_logo" src="img/logo/logo.png" style="height: 50px;">
+            </div>
+            <a target="_blank" href="https://vk.com/nanail_vrn">
+              <svg viewBox="0 0 448 512" class="footer_link_svg">
+                <path
+                  d="M31.4907 63.4907C0 94.9813 0 145.671 0 247.04V264.96C0 366.329 0 417.019 31.4907 448.509C62.9813 480 113.671 480 215.04 480H232.96C334.329 480 385.019 480 416.509 448.509C448 417.019 448 366.329 448 264.96V247.04C448 145.671 448 94.9813 416.509 63.4907C385.019 32 334.329 32 232.96 32H215.04C113.671 32 62.9813 32 31.4907 63.4907ZM75.6 168.267H126.747C128.427 253.76 166.133 289.973 196 297.44V168.267H244.16V242C273.653 238.827 304.64 205.227 315.093 168.267H363.253C359.313 187.435 351.46 205.583 340.186 221.579C328.913 237.574 314.461 251.071 297.733 261.227C316.41 270.499 332.907 283.63 346.132 299.751C359.357 315.873 369.01 334.618 374.453 354.747H321.44C316.555 337.262 306.614 321.61 292.865 309.754C279.117 297.899 262.173 290.368 244.16 288.107V354.747H238.373C136.267 354.747 78.0267 284.747 75.6 168.267Z" />
+              </svg>ВКонтакте</a>
 
-      <div class="footer_contact_wrap">
-        <div class="footer_contact">
-          <a target="_blank" href="https://vk.com/nanail_vrn"><svg viewBox="0 0 448 512" class="footer_link_svg">
+            <a target="_blank" href="https://instagram.com/masternail_vrn">
+              <svg width="800px" height="800px" viewBox="0 0 32 32" class="footer_link_svg" style="margin-right: -1px; width: 20px; height: 20px; margin-left: -1px;
+">
+                <path d="M6,2h20c2.2,0,4,1.8,4,4v20c0,2.2-1.8,4-4,4H6c-2.2,0-4-1.8-4-4V6C2,3.8,3.8,2,6,2z" />
+                <g>
+                  <path fill="#FFFFFF"
+                    d="M21.3,9.7c-0.6,0-1.2,0.5-1.2,1.2c0,0.7,0.5,1.2,1.2,1.2c0.7,0,1.2-0.5,1.2-1.2C22.4,10.2,21.9,9.7,21.3,9.7z" />
+                  <path fill="#FFFFFF"
+                    d="M16,11.2c-2.7,0-4.9,2.2-4.9,4.9c0,2.7,2.2,4.9,4.9,4.9s4.9-2.2,4.9-4.9C21,13.4,18.8,11.2,16,11.2z M16,19.3   c-1.7,0-3.2-1.4-3.2-3.2c0-1.7,1.4-3.2,3.2-3.2c1.7,0,3.2,1.4,3.2,3.2C19.2,17.9,17.8,19.3,16,19.3z" />
+                  <path fill="#FFFFFF"
+                    d="M20,6h-8c-3.3,0-6,2.7-6,6v8c0,3.3,2.7,6,6,6h8c3.3,0,6-2.7,6-6v-8C26,8.7,23.3,6,20,6z M24.1,20   c0,2.3-1.9,4.1-4.1,4.1h-8c-2.3,0-4.1-1.9-4.1-4.1v-8c0-2.3,1.9-4.1,4.1-4.1h8c2.3,0,4.1,1.9,4.1,4.1V20z" />
+                </g>
+              </svg>instagram</a>
+
+            <a target="_blank" href="https://t.me/NaNail_vrn">
+              <svg viewBox="0 0 512 512" class="footer_link_svg wrap_tg" style="margin-right: -1px; width: 20px; height: 20px; margin-left: -1px;
+">
+                <path
+                  d="m334.448 182.825c-.771.41-86.4 53.034-128.083 78.812-6.278 3.883-8.554 8.758-6.7 15.559 4.258 15.583 8.918 31.056 13.349 46.593.61 2.137 1.208 4.235 3.828 4.271 3.256.042 3.405-2.787 3.739-4.946 1.094-7.083 2.276-14.176 2.819-21.311a26.3 26.3 0 0 1 9.008-18.139c28.422-26.256 97.466-90.491 103.622-96.291 2.021-1.9 1.858-4.88-1.582-4.548z">
+                </path>
+                <path
+                  d="m420 36h-328a56 56 0 0 0 -56 56v328a56 56 0 0 0 56 56h328a56 56 0 0 0 56-56v-328a56 56 0 0 0 -56-56zm-69.229 335.042c-2 9.622-7.161 11.705-15.192 5.874q-30.225-21.944-60.427-43.916c-8.468-6.157-11.933-5.957-20.166.846q-15.154 12.524-30.463 24.862c-8.216 6.605-13.031 5.1-16.121-4.833-7.602-24.453-15.318-48.875-22.702-73.389-1.169-3.879-3.08-5.924-6.775-7.259-18.749-6.778-37.424-13.756-56.126-20.664-3.7-1.37-7.343-2.844-9.76-6.231 0-6.059 1.781-8.949 7.6-11.186q132.575-50.973 265.088-102.1c5.875-2.271 10.091-1.531 13.242 4-.004 1.691-34.378 167.68-48.198 233.996z">
+                </path>
+              </svg>telegram</a>
+
+            <a target="_blank" href="mailto:nail@na-nail.ru">
+              <svg class="footer_link_svg" viewBox="0 0 512 512">
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+              </svg>nail@na-nail.ru</a>
+
+            <div class="footer_mobile_wrap_none"><a target="_blank" href="https://na-nail.ru/policy/"><svg
+                  class="footer_link_svg" viewBox="0 0 640 512">
+                  <path
+                    d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z" />
+                </svg>Политика конфиденциальности</a></div>
+
+          </div>
+        </div>
+
+        <div class="footer_link footer_web_wrap_none"><a target="_blank" href="https://na-nail.ru/policy/"><svg
+              class="footer_link_svg" viewBox="0 0 640 512">
               <path
-                d="M31.4907 63.4907C0 94.9813 0 145.671 0 247.04V264.96C0 366.329 0 417.019 31.4907 448.509C62.9813 480 113.671 480 215.04 480H232.96C334.329 480 385.019 480 416.509 448.509C448 417.019 448 366.329 448 264.96V247.04C448 145.671 448 94.9813 416.509 63.4907C385.019 32 334.329 32 232.96 32H215.04C113.671 32 62.9813 32 31.4907 63.4907ZM75.6 168.267H126.747C128.427 253.76 166.133 289.973 196 297.44V168.267H244.16V242C273.653 238.827 304.64 205.227 315.093 168.267H363.253C359.313 187.435 351.46 205.583 340.186 221.579C328.913 237.574 314.461 251.071 297.733 261.227C316.41 270.499 332.907 283.63 346.132 299.751C359.357 315.873 369.01 334.618 374.453 354.747H321.44C316.555 337.262 306.614 321.61 292.865 309.754C279.117 297.899 262.173 290.368 244.16 288.107V354.747H238.373C136.267 354.747 78.0267 284.747 75.6 168.267Z" />
-            </svg>ВКонтакте</a>
-          <a target="_blank" href="https://instagram.com/masternail_vrn">
-            <svg class="footer_link_svg" viewBox="0 0 448 512">
-              <path
-                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-            </svg>Instagram
-          </a>
+                d="M562.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L405.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C189.5 251.2 196 330 246 380c56.5 56.5 148 56.5 204.5 0L562.8 267.7zM43.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C57 372 57 321 88.5 289.5L200.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C416.5 260.8 410 182 360 132c-56.5-56.5-148-56.5-204.5 0L43.2 244.3z" />
+            </svg>Политика конфиденциальности</a>
         </div>
       </div>
-      <div class="footer_logo_wrap"><a href="https://na-nail.ru/"><img class="footer_logo" src="/img/logo/logo.png"></a>
+
+
+
+      <div class="footer_logo_wrap footer_web_wrap_none">
+        <img class="header_logo" src="img/logo/logo.png" style="height: 50px;">
+        <!-- <?php the_custom_logo();?> -->
       </div>
     </div>
-    <div class="footer_copy"> <a href="https://na-nail.ru/">NA|NAIL</a> © 2023</div>
+    <div class="footer_copy"> <a href="https://na-nail.ru/">NaNail</a> © 2023</div>
   </footer>
-  </div>
   <!-- <?php wp_footer(); ?> -->
-  <script src="/script/"></script>
+  <script src="/script/custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </body>
 
 </html>

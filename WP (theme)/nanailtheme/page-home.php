@@ -1,15 +1,19 @@
 <?php
 /**
- * Template Name: В разработке
+ * Template Name: Главная
  */
 ?>
 
 <?php get_header(); ?>
 
-<section class="main" id='main'>
-    <div class="content_none">
-      <img class="content_none_del" src="<?php echo get_template_directory_uri() ?>/assets/img/devdovers.gif">
-    </div>
-</section>
+
+
+<div class="main" id='main'>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php the_content(); ?>
+	<?php endwhile; endif; ?>
+</div>
+
+
 
  <?php get_footer(); ?>
